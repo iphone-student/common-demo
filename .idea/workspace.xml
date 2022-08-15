@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b001f07-40ff-4622-96cd-ab5c1e6499ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/UserManagerServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeDictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeDictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeLoginLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeRoleDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/controller/YangtzeRoleMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeDictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeDictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeLoginLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeRoleDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/entity/YangtzeRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeDictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeDictTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeLoginLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeRoleDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/mapper/YangtzeRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/model/EnumRespStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/model/ServiceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeDictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeDictTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeLoginLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeRoleDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/YangtzeRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeDictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeDictTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeLoginLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeRoleDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/service/impl/YangtzeRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeDictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeDictTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeLoginLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeRoleDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/YangtzeRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/usermanagerserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermanagerserver/src/main/java/com/zb/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/usermanagerserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermanagerserver/src/test/java/com/dahua/hzcommon/HzCommonApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Java_soft\maven\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Java_soft/maven/apache-maven-3.8.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Java_soft\maven\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DNpCEZlGcbUJML7A9YeQbYy73d" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ZBEnjoySoft/common-demo/usermanagerserver/src/main/java/com/zb",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ZBEnjoySoft\common-demo\usermanagerserver\src\main\java\com\zb" />
+      <recent name="D:\ZBEnjoySoft\common-demo\usermanagerserver\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b001f07-40ff-4622-96cd-ab5c1e6499ea" name="Changes" comment="" />
+      <created>1660549269199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660549269199</updated>
+      <workItem from="1660549270516" duration="567000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

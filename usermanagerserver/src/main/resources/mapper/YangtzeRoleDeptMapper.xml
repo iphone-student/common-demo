@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cttic.yangtzeserver.usermanagerserver.mapper.YangtzeRoleDeptMapper">
+
+
+    <select id="selRole2Dept" resultType="com.cttic.yangtzeserver.usermanagerserver.entity.YangtzeDept">
+        SELECT * FROM "Yangtzedb"."SYS_DEPT" WHERE dept_id IN (
+
+            SELECT t.dept_id  FROM "Yangtzedb"."SYS_ROLE_DEPT" t WHERE t.role_id = #{roleId}
+        )
+
+    </select>
+
+
+<!--    <foreach collection="roleIds" item="roleId" open="("-->
+<!--             separator="," close=")">-->
+<!--        #{roleId}-->
+<!--    </foreach>-->
+
+    <insert id="addRole2Dept">
+        INSERT INTO "Yangtzedb"."SYS_ROLE_DEPT"(role_id,dept_id)
+        VALUES
+
+            (#{roleId},#{deptId})
+
+    </insert>
+
+    <update id="updateRole2Dept">
+        UPDATE "Yangtzedb"."SYS_ROLE_DEPT" t
+        SET t.role_id = #{roleId},t.dept_id = #{newDeptId}
+        WHERE t.id in(SELECT s1.id FROM (SELECT s.id FROM "Yangtzedb"."SYS_ROLE_DEPT" s WHERE s.dept_id = #{oldDeptId} And s.role_id =#{roleId}) s1
+            )
+    </update>
+<delete id="deletRole2Dept">
+    DELETE FROM "Yangtzedb"."SYS_ROLE_DEPT" WHERE id in(SELECT s1.id FROM(SELECT s.id FROM "Yangtzedb"."SYS_ROLE_DEPT" s WHERE s.role_id = #{roleId} And s.dept_id = #{deptId}) s1 )
+
+</delete>
+
+
+</mapper>

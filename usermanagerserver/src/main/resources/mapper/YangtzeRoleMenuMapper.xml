@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cttic.yangtzeserver.usermanagerserver.mapper.YangtzeRoleMenuMapper">
+
+
+    <select id="selRole2Menu" resultType="com.cttic.yangtzeserver.usermanagerserver.entity.YangtzeRoleMenu">
+                    SELECT * FROM "Yangtzedb"."SYS_MENU" WHERE Menu_id IN (
+
+                      SELECT t.Menu_id  FROM "Yangtzedb"."SYS_ROLE_MENU" t WHERE t.role_id = {roleId}
+                  )
+
+
+    </select>
+
+
+<!--    <foreach collection="roleIds" item="roleId" open="("-->
+<!--             separator="," close=")">-->
+<!--        #{roleId}-->
+<!--    </foreach>-->
+
+    <insert id="addRole2Menu">
+        INSERT INTO "Yangtzedb"."SYS_ROLE_MENU"(role_id,Menu_id)
+        VALUES
+
+            (#{roleId},#{MenuId})
+
+    </insert>
+
+    <update id="updateRole2Menu">
+        UPDATE "Yangtzedb"."SYS_ROLE_MENU"
+        SET role_id= #{roleId},Menu_id = #{newMenuId}
+        WHERE id in (SELECT id FROM "Yangtzedb"."SYS_ROLE_MENU" WHERE Menu_id = #{oldMenuId} And role_id =#{roleId})
+    </update>
+<delete id="deletRole2Menu">
+    DELETE FROM "Yangtzedb"."SYS_ROLE_MENU" WHERE role_id = #{roltId} And Menu_id = #{oldMenuId}
+</delete>
+
+
+</mapper>

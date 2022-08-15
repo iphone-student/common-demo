@@ -1,4 +1,4 @@
-package com.cttic.yangtzeserver.usermanagerserver.config;
+package com.zb.config;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import io.swagger.annotations.ApiOperation;

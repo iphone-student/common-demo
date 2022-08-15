@@ -1,4 +1,4 @@
-package com.cttic.yangtzeserver.usermanagerserver.config;
+package com.zb.config;
 
 
 import com.baomidou.mybatisplus.annotation.DbType;
@@ -9,9 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author : zaf
- * create at:  2021/3/24  15:06
- * @description: MyBatis-Plus来实现分页查询配置
+ * MyBatis-Plus来实现分页查询配置
  */
 @Configuration
 @MapperScan(basePackages = "com.cttic.yangtzeserver.usermanagerserver.mapper")

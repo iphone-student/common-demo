@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cttic.yangtzeserver.usermanagerserver.mapper.YangtzeDictDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.cttic.yangtzeserver.usermanagerserver.entity.YangtzeDictData">
+            <id property="dictCode" column="dict_code" jdbcType="INTEGER"/>
+            <result property="dictSort" column="dict_sort" jdbcType="INTEGER"/>
+            <result property="dictLabel" column="dict_label" jdbcType="VARCHAR"/>
+            <result property="dictValue" column="dict_value" jdbcType="VARCHAR"/>
+            <result property="dictType" column="dict_type" jdbcType="VARCHAR"/>
+            <result property="cssClass" column="css_class" jdbcType="VARCHAR"/>
+            <result property="listClass" column="list_class" jdbcType="VARCHAR"/>
+            <result property="isDefault" column="is_default" jdbcType="CHAR"/>
+            <result property="status" column="status" jdbcType="CHAR"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        dict_code,dict_sort,dict_label,
+        dict_value,dict_type,css_class,
+        list_class,is_default,status,
+        create_by,create_time,update_by,
+        update_time,remark
+    </sql>
+
+    <select id="allDictData" resultType="com.cttic.yangtzeserver.usermanagerserver.entity.YangtzeDictData">
+        SELECT *  FROM "Yangtzedb"."SYS_DICT_DATA"
+    </select>
+    <select id="selectDictDataByType" resultType="com.cttic.yangtzeserver.usermanagerserver.entity.YangtzeDictData">
+        SELECT *  FROM "Yangtzedb"."SYS_DICT_DATA" WHERE dict_type = #{dictType}
+    </select>
+
+    <insert id="addDictDataByType">
+        INSERT INTO "Yangtzedb"."SYS_DICT_DATA"(dict_sort,dict_label,dict_value,dict_type,css_class,list_class,is_default,status,create_by,create_time,remark)
+        VALUES
+            (#{dictSort},#{dictLabel},#{dictValue},#{dictType},#{cssClass},#{listClass},#{isDefault},#{status},#{createBy},#{createTime},#{remark})
+    </insert>
+
+    <update id="updateDictDataByType">
+        UPDATE "Yangtzedb"."SYS_DICT_DATA"
+        <set>
+            <if test="dictSort != null ">
+                dict_sort = #{dictSort},
+            </if>
+            <if test="dictLabel != null and dictLabel != ''">
+                dict_label = #{dictLabel},
+            </if>
+            <if test="dictValue != null and dictValue != ''">
+                dict_value = #{dictValue},
+            </if>
+            <if test="dictType != null and dictType != ''">
+                dict_type = #{dictType},
+            </if>
+            <if test="cssClass != null and cssClass != ''">
+                css_class = #{cssClass},
+            </if>
+            <if test="listClass != null and listClass != ''">
+                list_class = #{listClass},
+            </if>
+            <if test="status != null and status != ''">
+                status = #{status},
+            </if>
+            <if test="isDefault != null and isDefault != ''">
+                is_default = #{isDefault},
+            </if>
+            <if test="updateBy != null and updateBy != ''">
+                update_by = #{updateBy},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark},
+            </if>
+        </set>
+        WHERE dict_code = #{dictCode}
+    </update>
+
+
+</mapper>

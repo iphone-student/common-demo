@@ -1,0 +1,20 @@
+#spring:
+#  application:
+#    name: usermanagerserver
+#  cloud:
+#    nacos:
+#      username: nacos
+#      password: nacos_235
+#      discovery:
+#        server-addr: 10.10.10.235:8848
+#        namespace: 2f79f84e-7fb4-438b-a4e2-fac22578aa68
+#      config:
+#        server-addr: 10.10.10.235:8848
+#        file-extension: yaml  #指定yaml格式的配置文件
+#        enabled: true
+#        group: DEFAULT_GROUP
+#        namespace: 2f79f84e-7fb4-438b-a4e2-fac22578aa68
+#        refresh-enabled: true
+#
+#
+
