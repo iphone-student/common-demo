@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dahua.hzcommon.mapper.UserMapper">
+    <resultMap id="UserMap" type="com.dahua.hzcommon.dao.User" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+<!--        <result column="age" property="age" jdbcType="TIMESTAMP" />-->
+        <result column="sex" property="sex" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="findUser" resultMap="UserMap">
+    SELECT * FROM user
+    </select>
+    <select id="findById" resultMap="UserMap">
+    SELECT * FROM user WHERE id = #{id}
+    </select>
+
+    <insert id="addUser" parameterType="com.dahua.hzcommon.dao.User">
+        INSERT INTO user ( name, age, sex)
+        VALUES ( #{name}, #{age}, #{sex});
+    </insert>
+
+    <update id="UpdateUser" parameterType="com.dahua.hzcommon.dao.User">
+        UPDATE user SET name=#{name}, age = #{age},sex=#{sex}
+        WHERE id = #{id};
+    </update>
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <select id="selectUser" resultType="User">-->
+<!--                 SELECT id from user
+                    LEFT JOIN userfile c ON c.userFileId = a.userFileId-->
+<!--         WHERE id = #{id}-->
+<!--    </select>-->
+
+<!--    <insert id="addUser" parameterType="com.zb.Pojo.User">-->
+<!--        INSERT INTO user (id, name, age, sex)-->
+<!--        VALUES (#{id}, #{name}, #{age}, #{sex});-->
+<!--    </insert>-->
+
+<!--    <update id="updateFile" parameterType="com.zb.Pojo.User">-->
+<!--        UPDATE file SET filename=#{fileName}, uploadTime = #{uploadTime}where fileId = #{fileId};-->
+<!--    </update>-->
+<!--    <delete id="deleteUser" parameterType="int">-->
+<!--        delete from user where id = #{id}-->
+<!--    </delete>-->
+</mapper>
